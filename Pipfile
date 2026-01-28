@@ -12,6 +12,13 @@ fsspec = "*"
 huggingface-hub = "*"
 
 [dev-packages]
+black = "*"
+flake8 = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+lint = "flake8 ."
+format = "black ."
